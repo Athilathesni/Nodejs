@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #740f0f;
+          }
+          
+          li {
+            float: left;
+          }
+          h1{
+            color: #740f0f;
+          }
+          
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          li a:hover:not(.active) {
+            background-color: #111;
+          }
+          
+
+          .firstsection {
+            background-color: rgb(188, 194, 188);
+            height: 400px;
+        }
+        
+        .secondsection {
+            background-color: rgb(203, 203, 207);
+            height: 400px;
+        }
+        .thirdsection{
+            background-color: rgb(182, 182, 219);
+            height: 400px;
+        }
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+        
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .secondhalf {
+            width: 30%;
+        }
+        
+        
+        
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        
+        .text-small {
+            font-size: 18px;
+        }
+        
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+        
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            margin: auto;
+        }
+        
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+       
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 15px;
+        }
+        
+        
+        .rightnav {
+            width: 100%;
+            text-align: right;
+            margin-top: 10px;
+        }
+        
+        #search {
+            box-sizing: border-box;
+            width: 70%;
+            padding: 8px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+        
+        .btn-sm {
+            padding: 8px 20px;
+            margin: 7px 5px;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="http://localhost:3000/contact">Contact</a></li>
+        <li><a href="http://localhost:3000/about">About</a></li>
+      </ul>
+
+      <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" 
+                    id="web">Web Technology
+                  </h1>
+                <p class="text-small">
+                    HTML stands for HyperText Markup Language.
+                    It is used to design web pages using a markup
+                    language. HTML is the combination of Hypertext
+                    and Markup language. Hypertext defines the
+                    link between the web pages. A markup language
+                    is used to define the text document within tag
+                    which defines the structure of web pages.
+                    HTML is a markup language that is used by the
+                    browser to manipulate text, images, and other
+                    content to display it in the required format.
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" 
+                    id="program">
+                    C Programming
+                </h1>
+                <p class="text-small">
+                    C is a procedural programming language. It
+                    was initially developed by Dennis Ritchie
+                    as a system programming language to write
+                    operating system. The main features of C
+                    language include low-level access to memory,
+                    simple set of keywords, and clean style,
+                    these features make C language suitable for
+                    system programming like operating system or
+                    compiler development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <h1 class="sectionTag text-big">Java</h1>
+            <p class="sectionSubTag text-small">
+                Java has been one of the most popular
+                programming language for many years.
+                Java is Object Oriented. However it is
+                not considered as pure object oriented
+                as it provides support for primitive
+                data types (like int, char, etc) The
+                Java codes are first compiled into byte
+                code (machine independent code). Then
+                the byte code is run on Java Virtual
+                Machine (JVM) regardless of the
+                underlying architecture.
+            </p>
+        </div>
+    </section>
+     
+    <section class="thirdsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" 
+                    id="web">Css
+                  </h1>
+                <p class="text-small">
+                    CSS(Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is with a simple syntax example and also covers some key terms about the language.
+                    In the Introduction to HTML module, we covered what HTML is and how it is used to mark up documents. These documents will be readable in a web browser. Headings will look larger than regular text, paragraphs break onto a new line and have space between them. Links are colored and underlined to distinguish them from the rest of the text. What you are seeing are the browser's default styles — very basic styles — that the browser applies to HTML to make sure that the page will be basically readable even if no explicit styling is specified by the author of the page.
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+    <footer class="background">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved
+        </p>
+    </footer>
+
+</body>
+</html>
